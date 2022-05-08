@@ -1,0 +1,5 @@
+package kafkawithses;
+
+public class SenderKafka {
+
+}

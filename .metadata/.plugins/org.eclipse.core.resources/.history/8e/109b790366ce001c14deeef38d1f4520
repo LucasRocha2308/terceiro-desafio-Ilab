@@ -1,0 +1,20 @@
+package kafkawithses;
+
+import java.util.Properties;
+
+import org.apache.kafka.clients.consumer.ConsumerConfig;
+import org.apache.kafka.clients.consumer.KafkaConsumer;
+
+public class ConsumerKafka {
+
+	public static void main(String[] args) {
+		
+		Properties properties = new Properties();
+		properties.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+		
+		
+		KafkaConsumer<String, String> consumer = new KafkaConsumer<String, String>(properties);
+		
+	}
+	
+}

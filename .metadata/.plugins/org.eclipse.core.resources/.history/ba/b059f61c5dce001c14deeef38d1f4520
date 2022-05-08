@@ -1,0 +1,14 @@
+package kafkawithses;
+
+import org.apache.kafka.clients.producer.KafkaProducer;
+
+public class SenderKafka {
+	
+	public static void main(String[] args) {
+		
+		new Properties();
+		new KafkaProducer<String, String>(properties);
+		
+	}
+
+}

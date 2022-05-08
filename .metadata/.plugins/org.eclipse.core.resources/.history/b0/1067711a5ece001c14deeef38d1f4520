@@ -1,0 +1,19 @@
+package kafkawithses;
+
+import java.util.Properties;
+
+import org.apache.kafka.clients.producer.KafkaProducer;
+import org.apache.kafka.clients.producer.ProducerConfig;
+
+public class SenderKafka {
+	
+	public static void main(String[] args) {
+		
+		Properties properties = new Properties();
+		properties.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "localhost:9092");
+		
+		new KafkaProducer<String, String>(properties);
+		
+	}
+
+}
