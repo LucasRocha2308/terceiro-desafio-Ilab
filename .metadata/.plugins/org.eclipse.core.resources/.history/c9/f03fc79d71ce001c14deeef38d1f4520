@@ -1,0 +1,9 @@
+package kafkawithses;
+
+public class KafkaWithSes {
+
+	public static void main(String[] args) {
+		SESService.sendMessage("Uma mensagem - " + LocalDate.now());
+	}
+	
+}
